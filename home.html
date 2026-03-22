@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aditya Event hub</title>
+  <link rel="stylesheet" href="homecss.css">
+</head>
+<body>
+    <video autoplay muted loop style="left: 0; right: 0;top: 0;bottom: 0;object-fit:cover;position: fixed;z-index: -1;top: 0;">
+        <source src="12716-241674181.mp4" type="video/mp4"> 
+    </video>
+<nav>
+  <div class="logo-container">
+    <img src="aditya logo.png" alt="Logo" class="adityalogo">
+    <h2>Aditya Event Hub</h2>
+  </div>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Events</a>
+    <a href ="#">Alumni</a>
+    <a href ="#">Request</a>
+    <a href="#">Contact</a>
+  </div>
+    <select id="log" >
+        <option value="Login">👤Login</option>
+        <option value="student">Student Login</option>
+        <option value="admin">Admin Login</option>
+    </select>
+</nav>
+
+<section class="hero">
+  <h1>Discover Events in Your Campus</h1>
+  <input type="search" placeholder="Search events...">
+</section>
+
+<section>
+  <h2>🔴 Live Events</h2>
+  <div class="card live">
+    <h3>Robotics Workshop</h3>
+    <p>Now </p>
+    <p> VB Seminar Hall</p>
+  </div>
+</section>
+ 
+<section>
+  <h2>📅 Upcoming Events</h2>
+  <div class="grid"> 
+    <div class="card">
+      <h3>MPA 2k26</h3>
+      <p>March 25</p>
+      <p>BGB 1st floor</p>
+      <button onclick="openForm('MPA 2026')">Register</button>
+    </div>
+
+    <div class="card">
+      <h3>Farwell Fest</h3>
+      <p>March 28</p>
+      <p>VB Seminar hall</p>
+      <button onclick="openForm('Farwell Fest')">Register</button>
+    </div>
+
+    <div class="card">
+      <h3>Internals</h3>
+      <p>April 1</p>
+      <p>Lab 3</p>
+      <button onclick="openForm('Internals')">Register</button>
+    </div>
+
+  </div>
+</section> 
+<div id="popup" class="popup">
+  <div class="form-box">
+    <h2>Register</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <input type="text" id="roll" placeholder="Your Roll number">
+    <p id="eventName"></p>
+    <button onclick="submitForm()">Submit</button>
+    <button class="close" onclick="closeForm()">Close</button>
+  </div>
+</div>
+ <div id="sub" class = "sub">
+    <h2> ✔️Submitted Sucessfully</h2>
+ </div>
+<footer>
+  <p>Aditya event hub © 2026 - All rights Reserved</p>
+</footer>
+
+<script src="homejs.js"></script>
+
+</body>
+</html>
