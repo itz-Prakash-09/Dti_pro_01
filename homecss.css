@@ -24,7 +24,7 @@ nav{
   color:white;
 }
 nav div{
-    display: flex;
+    display: inline-block;
     text-align: center;
     gap: 20px;
 }
